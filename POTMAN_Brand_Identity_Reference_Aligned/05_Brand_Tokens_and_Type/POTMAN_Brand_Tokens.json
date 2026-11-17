@@ -1,0 +1,30 @@
+{
+  "name": "POTMAN",
+  "tagline": "Made for spaces that grow.",
+  "reference": "User-supplied POTMAN Brand Identity Guide (1).png",
+  "primaryWordmark": "Custom traced and cleaned vector artwork; never reset using standard font",
+  "color": {
+    "ink": "#20231F",
+    "ivory": "#F5F2EB",
+    "sand": "#C8B9A4",
+    "sage": "#879080",
+    "clay": "#B8755D"
+  },
+  "typography": {
+    "brand": "POTMAN custom outlined wordmark",
+    "display": "Poppins 600/700",
+    "body": "Montserrat 400/500",
+    "fallback": "Inter, system-ui, sans-serif"
+  },
+  "fontDownloadSources": {
+    "Poppins": "https://fonts.google.com/specimen/Poppins",
+    "Montserrat": "https://fonts.google.com/specimen/Montserrat"
+  },
+  "minimumWidth": {
+    "wordmark_print_mm": 30,
+    "wordmark_digital_px": 140,
+    "monogram_digital_px": 16
+  },
+  "clearSpace": "At least 0.50x where x is the height of the letter P",
+  "brandClaimsNotice": "Do not describe products as certified, resin-free, weather-resistant, or lightweight without verification."
+}

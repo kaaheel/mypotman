@@ -1,0 +1,23 @@
+POTMAN TYPOGRAPHY SYSTEM
+
+CUSTOM BRAND WORDMARK
+The POTMAN logo is a hand-shaped geometric wordmark supplied as vector outlines in 02_Vector_Logos. It is NOT a complete A-Z installable typeface. Use the vector logo for official branding and never typeset POTMAN in a substitute font to recreate the mark.
+
+DISPLAY / HEADLINES: Poppins SemiBold (600) and Bold (700)
+Official source: https://fonts.google.com/specimen/Poppins
+
+BODY / E-COMMERCE UI: Montserrat Regular (400) and Medium (500)
+Official source: https://fonts.google.com/specimen/Montserrat
+
+These are recommended font families from the user-provided design reference. Download and review current licences from official sources. Font files are not included in this kit.
+
+LOGO TAGLINE
+Made for spaces that grow. (all caps / spaced when used as lockup)
+The supplied logo-with-tagline files have the tagline converted to vector outlines.
+
+DESIGN RULES
+- Page titles: Poppins 600/700; sentence case preferred.
+- Paragraphs: Montserrat 400, line-height 1.5-1.65.
+- Labels/nav: Montserrat 500, tracked 0.08-0.14em.
+- Prices and numbers: Montserrat 500/600 with tabular numerals where supported.
+- Avoid long passages in uppercase.

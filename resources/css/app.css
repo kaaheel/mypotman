@@ -1,0 +1,94 @@
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,700,900&display=swap');
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../views/**/*.blade.php';
+@source '../js/**/*.{vue,js,ts,jsx,tsx}';
+
+@theme {
+    /* Brand Colors */
+    --color-pm-ink: #20231F;
+    --color-pm-ivory: #F5F2EB;
+    --color-pm-sand: #C8B9A4;
+    --color-pm-sage: #879080;
+    --color-pm-clay: #B8755D;
+
+    /* Secondary / Utility Shading based on Brand Foundation */
+    --color-pm-ink-muted: #52564F;
+    --color-pm-ivory-warm: #EFECE4;
+    --color-pm-ivory-card: #f9f8f4;
+    --color-pm-sand-light: #dfd7cc;
+    --color-pm-sand-dark: #a99881;
+    --color-pm-sage-light: #a4aca0;
+    --color-pm-clay-light: #c88d78;
+
+    /* Typography: Satoshi across Display, Body, and UI */
+    --font-display: 'Satoshi', ui-sans-serif, system-ui, -apple-system, sans-serif;
+    --font-body: 'Satoshi', ui-sans-serif, system-ui, -apple-system, sans-serif;
+    --font-sans: 'Satoshi', ui-sans-serif, system-ui, -apple-system, sans-serif;
+}
+
+:root {
+    --pm-ink: #20231F;
+    --pm-ink-secondary: #52564F;
+    --pm-ivory: #F5F2EB;
+    --pm-sand: #C8B9A4;
+    --pm-sage: #879080;
+    --pm-clay: #B8755D;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 84px;
+}
+
+html.lenis, html.lenis body {
+    height: auto;
+}
+
+.lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+}
+
+.lenis.lenis-stopped {
+    overflow: hidden;
+}
+
+body {
+    background-color: var(--pm-ivory);
+    color: var(--pm-ink);
+    font-family: var(--font-body);
+    font-feature-settings: "ss01" on, "cv02" on;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: clip;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    text-wrap: balance;
+}
+
+/* Smooth section entrance animation - Resilient default opacity */
+.reveal-on-scroll {
+    opacity: 1;
+    transform: none;
+    transition: opacity 700ms cubic-bezier(0.22, 1, 0.36, 1), transform 700ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal-on-scroll.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+    .reveal-on-scroll {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}
